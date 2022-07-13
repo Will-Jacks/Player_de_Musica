@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+   
+
+
+.cabecalho {
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #1d1c1c;
+    padding: 50px;
+    box-shadow: rgba(0,0,0,0.5) 0px 0px 8px 3px;
+}
+
+img {
+    width: 300px;
+    height: 227px;
+}
+
+.conteudo-musica {
+    width: 300px;
+}
+
+.nome-musica{
+    text-shadow: 3px 0px 5px rgba(0,0,0,0.2);
+    margin: 15px 0;
+}
+
+.barra-progresso {
+    display: flex;
+
+    width: 300px;
+    height: 10px;
+    margin: 25px 0 ;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+progress {
+    width: 0;
+    height: 11px;
+}
+
+.bolinha-progresso {
+    background-color: #FFF;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.tempo-de-duracao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controles-do-player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 300px;
+    text-align: center;
+    margin: 15px 0;
+    
+}
+
+.botao-play, .botao-pause {
+    font-size: 40px;
+    cursor: pointer;
+
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.botao-play:active, .botao-pause:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.setas {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    .principal {
+        width: 250px;
+        margin: 20% auto;
+    }
+}
