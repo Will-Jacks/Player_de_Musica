@@ -51,7 +51,16 @@ a{
 }
 /*Parte do index*/
 
+.imagem-icone-inicial {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
 .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: rgba(0,0,0,0.5);
     padding: 20px;

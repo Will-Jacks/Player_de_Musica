@@ -15,7 +15,7 @@ let musicas = [
     
 ]
 
-let imagemMusica = document.querySelector('img');
+let imagemMusica = document.querySelector('.img-musica');
 let nomeMusica = document.querySelector('.nome-musica');
 let nomeArtista = document.querySelector('.nome-artista');
 // Info das músicas
