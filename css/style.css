@@ -2,6 +2,7 @@
 
 *{
     text-decoration: none;
+    list-style: circle;
 }
 
 a:visited {
@@ -65,6 +66,33 @@ a{
     background-color: rgba(0,0,0,0.5);
     padding: 20px;
 }
+
+.menu-icone {
+    background-color: #151515;
+    width: 250px;
+    padding: 5px;
+}
+
+.menu-icone > p{
+    margin-left: 10px;
+}
+
+.nav-musicas {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 5px;
+    width: 250px;
+    height: 90vh;
+    background-color: #151515;
+}
+
+.exibir-musicas {
+    margin: 20px 10px;
+    font-size: 15px;
+}
+
+
 .principal {
     display: flex;
     flex-direction: column;
@@ -156,5 +184,14 @@ progress {
     .principal {
         width: 250px;
         margin: 20% auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-musicas {
+        display: none;
+    }
+    .menu-icone {
+        background-color: #2A2A2A;
     }
 }
