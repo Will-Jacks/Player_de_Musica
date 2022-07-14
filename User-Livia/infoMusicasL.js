@@ -50,7 +50,7 @@ console.log(musicasFormatadas);
 //Menu info musicas responsivo
 const iconeMenu = document.querySelector('.menu-icone');
 let navMusicas = document.querySelector('.nav-musicas');
-iconeMenu.addEventListener('click', ()=>{
+function exibeMenu(){
     if(navMusicas.style.display === 'none'){
         navMusicas.style.display = 'flex';
         iconeMenu.style.backgroundColor = '#151515';
@@ -58,4 +58,4 @@ iconeMenu.addEventListener('click', ()=>{
         navMusicas.style.display = 'none';
         iconeMenu.style.backgroundColor = '#2A2A2A';
     }
-})
+};
