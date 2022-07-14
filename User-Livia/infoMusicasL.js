@@ -35,3 +35,27 @@ let indexMusica = 0;
 //Renderizando todas as características da música
 renderizarMusica(indexMusica);
 //Renderizando todas as características da música
+
+
+//Spread dos nomes das músicas
+let musicasFormatadas = [];
+for (let i=0; i < musicas.length; i++){
+    const nomeDasMusicas = [...musicas[i].titulo];
+    musicasFormatadas += [nomeDasMusicas.join("") + '\n' + '\n'];
+    document.querySelector('.exibir-musicas').innerText = musicasFormatadas
+}
+console.log(musicasFormatadas);
+//Spread dos nomes das músicas
+
+//Menu info musicas responsivo
+const iconeMenu = document.querySelector('.menu-icone');
+let navMusicas = document.querySelector('.nav-musicas');
+iconeMenu.addEventListener('click', ()=>{
+    if(navMusicas.style.display === 'none'){
+        navMusicas.style.display = 'flex';
+        iconeMenu.style.backgroundColor = '#151515';
+    } else {
+        navMusicas.style.display = 'none';
+        iconeMenu.style.backgroundColor = '#2A2A2A';
+    }
+})
