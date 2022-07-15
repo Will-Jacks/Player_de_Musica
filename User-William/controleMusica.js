@@ -65,3 +65,5 @@ function segundosParaMinutos(segundos) {
     }
     return campoMinutos + ':' + campoSegundos
 }
+
+addEventListener()
