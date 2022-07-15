@@ -13,10 +13,19 @@
 <body>
     <header class="cabecalho">
         <img src="imagens-perfis/favicon-32x32.png" alt="" class="imagem-icone-inicial">
-        <h1>Willfy</h1>
+        <a href="index.html">
+            <h1>Willfy</h1>
+        </a>
     </header>
 
+    <div class="menu-icone" ontouchend="exibeMenu();" onclick="exibeMenu();"><p>☰</p></div>
+
+    <nav class="nav-musicas">
+        <p class="exibir-musicas"></p>  
+    </nav>
+
     <main class="principal">
+
         <img src="imagens/img-msc-300x300.jpg" alt="Imagem da música" class="img-musica">
         <section class="conteudo-musica">
             <h2 class="nome-musica">Nome da música</h2>
@@ -40,9 +49,12 @@
             <i class="fa-solid fa-angle-right botao-avancar setas"></i>
         </section>
         <audio src=""></audio>
+
+        
     </main>
 </body>
 <script src="User-William/renderMusica.js"></script>
 <script src="User-William/controleMusica.js"></script>
 <script src="User-William/infoMusicas.js"></script>
+<script src="User-William/nav.js"></script>
 </html>
